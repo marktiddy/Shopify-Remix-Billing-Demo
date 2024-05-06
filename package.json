@@ -19,28 +19,29 @@
     "vite": "vite"
   },
   "type": "module",
+  "engines": {
+    "node": ">=16.0.0 <22.0.0"
+  },
   "dependencies": {
-    "@prisma/client": "^5.8.0",
+    "@prisma/client": "^5.11.0",
     "@remix-run/dev": "^2.7.1",
     "@remix-run/node": "^2.7.1",
     "@remix-run/react": "^2.7.1",
     "@remix-run/serve": "^2.7.1",
-    "@shopify/app": "3.56.3",
-    "@shopify/cli": "3.56.3",
     "@shopify/polaris": "^12.0.0",
-    "@shopify/shopify-api": "^9.2.0",
-    "@shopify/shopify-app-remix": "^2.5.0",
-    "@shopify/shopify-app-session-storage-prisma": "^4.0.1",
+    "@shopify/shopify-api": "^10.0.0",
+    "@shopify/shopify-app-remix": "^2.8.2",
+    "@shopify/shopify-app-session-storage-prisma": "^4.0.5",
     "isbot": "^5.1.0",
-    "prisma": "^5.8.0",
+    "prisma": "^5.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-tsconfig-paths": "^4.3.1"
   },
   "devDependencies": {
     "@remix-run/eslint-config": "^2.7.1",
-    "@shopify/api-codegen-preset": "^0.0.3",
-    "@shopify/app-bridge-types": "^0.0.7",
+    "@shopify/api-codegen-preset": "^0.0.7",
+    "@shopify/app-bridge-types": "^0.0.13",
     "@types/eslint": "^8.40.0",
     "@types/node": "^20.6.3",
     "@types/react": "^18.2.31",
@@ -57,5 +58,11 @@
   "trustedDependencies": [
     "@shopify/plugin-cloudflare"
   ],
+  "resolutions": {
+    "undici": "6.13.0"
+  },
+  "overrides": {
+    "undici": "6.13.0"
+  },
   "author": "marktiddy"
 }
